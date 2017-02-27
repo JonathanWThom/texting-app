@@ -9,6 +9,7 @@ class MessagesController < ApplicationController
   end
 
   def create
+    ## there has GOT to be a better way to do this
     messages = 0
     saved_messages = []
     params[:to].each do |to|
@@ -16,10 +17,12 @@ class MessagesController < ApplicationController
         messages += 1
         @message = Message.new(to: to, from: message_params[:from], body: message_params[:body])
         if @message.save
+          ## sends to invalid numbers
           saved_messages.push(@message)
         end
       end
     end
+
 
     if saved_messages.length == messages
       flash[:notice] = "All messages sent"

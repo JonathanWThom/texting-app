@@ -9,7 +9,16 @@
   </head>
 
   <body>
-    <%= flash[:notice] %>
-    <%= yield %>
+    <ul class="nav nav-tabs">
+      <li><a href="#" data-toggle="tab">Home</a></li>
+      <li class="<%= 'active' if params[:controller] == 'messages' && params[:action] == 'index' %>" ><%= link_to "Messages", messages_path, { 'data-toggle' => 'tab' } %></li>
+      <li class="<%= 'active' if params[:controller] == 'messages' && params[:action] == 'new' %>"><%= link_to "New Message", new_message_path, { 'data-toggle' => 'tab' } %></li>
+      <li class="<%= 'active' if params[:controller] == 'contacts' && params[:action] == 'index' %>"><%= link_to "Contacts", contacts_path, { 'data-toggle' => 'tab' } %></li>
+      <li class="<%= 'active' if params[:controller] == 'contacts' && params[:action] == 'new' %>"><%= link_to "New Contact", new_contact_path, { 'data-toggle' => 'tab' } %></li>
+    </ul>
+    <div class="container">
+      <%= flash[:notice] %>
+      <%= yield %>
+    </div>
   </body>
 </html>
