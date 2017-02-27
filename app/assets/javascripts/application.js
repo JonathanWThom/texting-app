@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+  $("#addAnotherNumber").click(function(){
+    $("#to").append($("#new_number_form").html());
+  });
+});

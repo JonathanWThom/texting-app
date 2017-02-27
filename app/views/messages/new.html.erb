@@ -10,9 +10,22 @@
 <% end %>
 
 <%= form_for @message do |f| %>
-  <%= f.select(:to, @contacts.map { |contact| [ contact.name, contact.number ] }, {:include_blank => 'Select from Contacts'}) %>
-  <%= f.label 'Or, enter a number' %>
+
+  <div id="to">
+    <%= render partial: "to_form" %>
+  </div>
+  <a href="javascript:;" id="addAnotherNumber">Add Another Number</a>
+  <!-- had to do it in this order, would be nice to know how to take one or the other -->
+  <!-- will default to second thing entered -->
+  <div class="to-form">
+    <%= f.select(:to, @contacts.map { |contact| [ contact.name, contact.number ] }, {:include_blank => 'Select from Contacts'}) %>
+  </div>
   <%= f.text_field :to %>
+
+  <div class="hide" id="new_number_form">
+    <%= render partial: "to_form", locals: {to: false} %>
+  </div>
+
   <%= f.label :from %>
   <%= f.text_field :from %>
   <%= f.label :body %>
