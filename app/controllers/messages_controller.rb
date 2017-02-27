@@ -9,17 +9,23 @@ class MessagesController < ApplicationController
   end
 
   def create
-    messages = []
+    messages = 0
+    saved_messages = []
     params[:to].each do |to|
       if to != ""
+        messages += 1
         @message = Message.new(to: to, from: message_params[:from], body: message_params[:body])
         if @message.save
-          flash[:notice] = "Message was saved"
-          redirect_to messages_path
-        else
-          render :new
+          saved_messages.push(@message)
         end
       end
+    end
+
+    if saved_messages.length == messages
+      flash[:notice] = "All messages sent"
+      redirect_to messages_path
+    else
+      render :new
     end
   end
 
