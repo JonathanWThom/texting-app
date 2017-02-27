@@ -45,6 +45,13 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'poltergeist'
+  gem 'capybara'
+  gem 'simplecov', :require => false
+  gem "factory_girl_rails", "~> 4.0"
+  gem "database_cleaner"
 end
 
 group :development do
