@@ -10,7 +10,8 @@
 <% end %>
 
 <%= form_for @message do |f| %>
-  <%= f.label :to %>
+  <%= f.select(:to, @contacts.map { |contact| [ contact.name, contact.number ] }, {:include_blank => 'Select from Contacts'}) %>
+  <%= f.label 'Or, enter a number' %>
   <%= f.text_field :to %>
   <%= f.label :from %>
   <%= f.text_field :from %>
