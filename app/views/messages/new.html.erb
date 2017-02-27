@@ -10,24 +10,26 @@
 <% end %>
 
 <%= form_for @message do |f| %>
-  <div class="to-form">
-    <%= f.select(:to, @contacts.map { |contact| [ contact.name, contact.number ] }, {:include_blank => 'Select from Contacts'}) %>
-  </div>
-
+  <h3>To</h3>
   <div id="to">
     <%= render partial: "to_form" %>
   </div>
-  <a href="javascript:;" id="addAnotherNumber">Add Another Number</a>
-  <!-- will default to second thing entered -->
+
+  <p><a href="javascript:;" id="addAnotherNumber">Add Another Number</a> or <a href="javascript:;" id="addAContact">Add From Contacts</a> </p>
 
 
   <div class="hide" id="new_number_form">
     <%= render partial: "to_form" %>
   </div>
 
-  <%= f.label :from %>
+  <div class="hide" id="to_contact_form">
+    <%= render partial: "to_contact_form" %>
+  </div>
+
+  <h3>From</h3>
   <%= f.text_field :from %>
-  <%= f.label :body %>
-  <%= f.text_field :body %>
-  <%= f.submit %>
+
+  <h3>Message</h3>
+  <%= f.text_area :body %>
+  <%= f.submit "Send", class: 'btn btn-success' %>
 <% end %>

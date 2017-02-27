@@ -1,0 +1,5 @@
+<div class="toContactForm">
+  <%= select_tag "to[]", options_from_collection_for_select(@contacts, "number", "name"), {:include_blank => 'Select Contact'} %>
+  <br>
+  <br>
+</div>

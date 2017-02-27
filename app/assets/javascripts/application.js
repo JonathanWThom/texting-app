@@ -18,4 +18,8 @@ $(document).ready(function(){
   $("#addAnotherNumber").click(function(){
     $("#to").append($("#new_number_form").html());
   });
+
+  $("#addAContact").click(function(){
+    $("#to").append($("#to_contact_form").html());
+  });
 });
