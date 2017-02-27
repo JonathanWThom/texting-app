@@ -9,12 +9,17 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.new(message_params)
-    if @message.save
-      flash[:notice] = "Your message was sent!"
-      redirect_to messages_path
-    else
-      render :new
+    messages = []
+    params[:to].each do |to|
+      if to != ""
+        @message = Message.new(to: to, from: message_params[:from], body: message_params[:body])
+        if @message.save
+          flash[:notice] = "Message was saved"
+          redirect_to messages_path
+        else
+          render :new
+        end
+      end
     end
   end
 
