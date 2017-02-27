@@ -9,6 +9,7 @@ class MessagesController < ApplicationController
   end
 
   def create
+    @contacts = Contact.all
     ## there has GOT to be a better way to do this
     messages = 0
     saved_messages = []
@@ -17,7 +18,7 @@ class MessagesController < ApplicationController
         messages += 1
         @message = Message.new(to: to, from: message_params[:from], body: message_params[:body])
         if @message.save
-          ## sends to invalid numbers
+          ## does not handle exceptions
           saved_messages.push(@message)
         end
       end
