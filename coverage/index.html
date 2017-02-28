@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Twilio</title>
+    <title>Code coverage for Texting-app</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.0/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
@@ -14,18 +14,18 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-27T16:10:02-08:00">2017-02-27T16:10:02-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-28T08:04:14-08:00">2017-02-28T08:04:14-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="green">91.5%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.31
+         1.14
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>36</b> files in total.
     <b>200</b> relevant lines. 
-    <span class="green"><b>200</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <span class="green"><b>183</b> lines covered</span> and
+    <span class="red"><b>17</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,7 +51,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#4f7e1a41f210a731d654e4787648d79bf2a10340" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
+        <td class="strong"><a href="#0ed483767e2fbd4fff41fd95ae94fa110c15cb43" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>2</td>
@@ -61,7 +61,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#f3bc465b08f1d813c20844f12ab25c8b9fceddd1" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
+        <td class="strong"><a href="#a9b1b3eade5af670eb970211585fe50e7dc95f2b" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>2</td>
@@ -71,7 +71,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#95a2d68383ebb7077b32ee87ef7055655f91c97c" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="strong"><a href="#3555d99f132db43489424b50df60176e65d1a039" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -81,7 +81,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#e7228d2aba2fe0070e08fd8d3e43de23973b0971" class="src_link" title="app/controllers/contacts_controller.rb">app/controllers/contacts_controller.rb</a></td>
+        <td class="strong"><a href="#091ce4d42ce06834a0be27e8580733d7ac114b63" class="src_link" title="app/controllers/contacts_controller.rb">app/controllers/contacts_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>30</td>
         <td>16</td>
@@ -91,7 +91,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#5c3f843d7a5ab31966c3ec286a06639592c0e9dd" class="src_link" title="app/controllers/home_controller.rb">app/controllers/home_controller.rb</a></td>
+        <td class="strong"><a href="#fb130fa2349597eb59bb44a18fe36988c2076831" class="src_link" title="app/controllers/home_controller.rb">app/controllers/home_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>2</td>
@@ -101,17 +101,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#b1cee622e5a363a6a95f2008430015e7c9e05e4b" class="src_link" title="app/controllers/messages_controller.rb">app/controllers/messages_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="strong"><a href="#f6f06b042088aa3706355d2947de7557fac35b5c" class="src_link" title="app/controllers/messages_controller.rb">app/controllers/messages_controller.rb</a></td>
+        <td class="red strong">64.0 %</td>
         <td>46</td>
         <td>25</td>
-        <td>25</td>
-        <td>0</td>
-        <td>1.7</td>
+        <td>16</td>
+        <td>9</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#7615a39b50e92196bac321692b772e1c52714128" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="strong"><a href="#4c45bfee9cbe08133e533b3aa470a0f81a9db92a" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>1</td>
@@ -121,7 +121,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#7297c42fcb04f3e685c24050c131306070857d9a" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
+        <td class="strong"><a href="#ddfee360bbaae9f49ee9b55359824002562b2498" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -131,7 +131,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#1c56f75acc7ab05e058b23c5a2067dbe49fcfd82" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
+        <td class="strong"><a href="#488b9065bd8dea66faad9e67f67267987e11a8a6" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>3</td>
@@ -141,7 +141,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#6e0eec5c311e896bf1a64b630e1505f4de822cf0" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+        <td class="strong"><a href="#3f2ad5a965398e1d6b16c158c44d78bc80831740" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -151,7 +151,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#0952c25211bde3b8390de60c436a311aa1829cf9" class="src_link" title="app/models/contact.rb">app/models/contact.rb</a></td>
+        <td class="strong"><a href="#ad9d5727c0e96be5c752dcf612b1a0ef736e46d3" class="src_link" title="app/models/contact.rb">app/models/contact.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -161,17 +161,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#222f524e6920fa47ab551b87a607f1618250a567" class="src_link" title="app/models/message.rb">app/models/message.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="strong"><a href="#3ed7b472975fcfeb41a8010b44c575e9b4dbb806" class="src_link" title="app/models/message.rb">app/models/message.rb</a></td>
+        <td class="red strong">70.0 %</td>
         <td>25</td>
         <td>10</td>
-        <td>10</td>
-        <td>0</td>
-        <td>1.8</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#90eadf9decb04106bd3d3175fbca62ffb9ebb9a7" class="src_link" title="config/application.rb">config/application.rb</a></td>
+        <td class="strong"><a href="#db4081293c73f6e857d47e1d208621150cc9a7ec" class="src_link" title="config/application.rb">config/application.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>25</td>
         <td>13</td>
@@ -181,7 +181,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#b220ca266801ebbc84bfef7489b32beaf225e898" class="src_link" title="config/boot.rb">config/boot.rb</a></td>
+        <td class="strong"><a href="#c14cd2b2fffb4b1749f03f662ca9c8a9df4dad19" class="src_link" title="config/boot.rb">config/boot.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -191,7 +191,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#f95cd03ffff73a09fd522ac5847a36eea52955b4" class="src_link" title="config/environment.rb">config/environment.rb</a></td>
+        <td class="strong"><a href="#51bb761695fa25e0fef7d446bd18a2b46260aa5d" class="src_link" title="config/environment.rb">config/environment.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>2</td>
@@ -201,7 +201,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#ddb1580867cc6ccc84c9c95d382dc5c8959adaba" class="src_link" title="config/environments/test.rb">config/environments/test.rb</a></td>
+        <td class="strong"><a href="#22cc834dd7a4977373416708173faf1d88f8b83f" class="src_link" title="config/environments/test.rb">config/environments/test.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>42</td>
         <td>12</td>
@@ -211,7 +211,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#931a4598a19112e4309d909ebc6d854626256e25" class="src_link" title="config/initializers/application_controller_renderer.rb">config/initializers/application_controller_renderer.rb</a></td>
+        <td class="strong"><a href="#b0162a5a933f08d94cd942a773ec55045439cfd8" class="src_link" title="config/initializers/application_controller_renderer.rb">config/initializers/application_controller_renderer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>0</td>
@@ -221,7 +221,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#56acdc1017773b15267faf5ba7d5c33be86cebdd" class="src_link" title="config/initializers/assets.rb">config/initializers/assets.rb</a></td>
+        <td class="strong"><a href="#4f1ad8d44b39a23a053cac56cafc9474e09a4577" class="src_link" title="config/initializers/assets.rb">config/initializers/assets.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>11</td>
         <td>1</td>
@@ -231,7 +231,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#97ebe9d8ced8182459394e7052a5d52a1d991d20" class="src_link" title="config/initializers/backtrace_silencers.rb">config/initializers/backtrace_silencers.rb</a></td>
+        <td class="strong"><a href="#c219cd67ee42b0f9863c71bcde28f2d3e84b4fa5" class="src_link" title="config/initializers/backtrace_silencers.rb">config/initializers/backtrace_silencers.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
         <td>0</td>
@@ -241,7 +241,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#adad7d80072c8017b43d7172b773d11aef5b140a" class="src_link" title="config/initializers/cookies_serializer.rb">config/initializers/cookies_serializer.rb</a></td>
+        <td class="strong"><a href="#fdb46c6613c70498446cdfcfbe603483afbd280c" class="src_link" title="config/initializers/cookies_serializer.rb">config/initializers/cookies_serializer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>1</td>
@@ -251,7 +251,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#af25dd63d1a7d37ec6dd4e3788e24c455661d50a" class="src_link" title="config/initializers/filter_parameter_logging.rb">config/initializers/filter_parameter_logging.rb</a></td>
+        <td class="strong"><a href="#2df74cad0c40b0d69db478d2726709ec106b39ff" class="src_link" title="config/initializers/filter_parameter_logging.rb">config/initializers/filter_parameter_logging.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>1</td>
@@ -261,7 +261,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#2c3975e6e5c3a8e679457ef3db80eb45252c2b23" class="src_link" title="config/initializers/inflections.rb">config/initializers/inflections.rb</a></td>
+        <td class="strong"><a href="#04bf36f0bee87d70000b3811acf1a9059392bca9" class="src_link" title="config/initializers/inflections.rb">config/initializers/inflections.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>16</td>
         <td>0</td>
@@ -271,7 +271,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c2065fabc5e35acb411b0afc8e66d81c57187c36" class="src_link" title="config/initializers/mime_types.rb">config/initializers/mime_types.rb</a></td>
+        <td class="strong"><a href="#22b29e6dda93d86165ad2eeb76031b3e9a5951f5" class="src_link" title="config/initializers/mime_types.rb">config/initializers/mime_types.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>0</td>
@@ -281,7 +281,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#10ede323ffdf1c77165fac448727ad308a2aacbc" class="src_link" title="config/initializers/new_framework_defaults.rb">config/initializers/new_framework_defaults.rb</a></td>
+        <td class="strong"><a href="#00d5fd7290c68ad580ca437ff29ae8d3ae1a3fc2" class="src_link" title="config/initializers/new_framework_defaults.rb">config/initializers/new_framework_defaults.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>24</td>
         <td>6</td>
@@ -291,7 +291,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c0a4b1044f88c0f163ee3e20381c6211859303df" class="src_link" title="config/initializers/session_store.rb">config/initializers/session_store.rb</a></td>
+        <td class="strong"><a href="#2131f0ef84e1ad91558b5914f3b4711f6aaba0ca" class="src_link" title="config/initializers/session_store.rb">config/initializers/session_store.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>1</td>
@@ -301,7 +301,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#8d1c826924d1cd30a2c81243febea5fd1b3a4d56" class="src_link" title="config/initializers/wrap_parameters.rb">config/initializers/wrap_parameters.rb</a></td>
+        <td class="strong"><a href="#3430c10624d1ab7ceb9634335e4cfb85bb0083cf" class="src_link" title="config/initializers/wrap_parameters.rb">config/initializers/wrap_parameters.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>14</td>
         <td>2</td>
@@ -311,7 +311,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#55722f071fcb96be124e67de65278417cd36632f" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
+        <td class="strong"><a href="#0da39059e1862a6aff57fe266239524ca97e931c" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>4</td>
@@ -321,7 +321,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#bf2bd80f818ddae0f995ae9c07b61ab989224f13" class="src_link" title="config/spring.rb">config/spring.rb</a></td>
+        <td class="strong"><a href="#34e5c4396a5cf4ccceb4320fbb2015a37beb1c85" class="src_link" title="config/spring.rb">config/spring.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>1</td>
@@ -331,7 +331,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#8c25513f649c6f4dc0d359b3613f9dfd7093e19d" class="src_link" title="spec/factories/contact.rb">spec/factories/contact.rb</a></td>
+        <td class="strong"><a href="#9109f165a05305649b4ba1b46409cc799b76a426" class="src_link" title="spec/factories/contact.rb">spec/factories/contact.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>4</td>
@@ -341,7 +341,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#cd94e5ac139594cad8b0a02cd56d85a52135ad67" class="src_link" title="spec/factories/message.rb">spec/factories/message.rb</a></td>
+        <td class="strong"><a href="#9f9d72aa7b82a60c4a9acf50bd1e5342d3f23049" class="src_link" title="spec/factories/message.rb">spec/factories/message.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
         <td>5</td>
@@ -351,7 +351,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#4b23b3a23dd8deb89c8832b44713d8ac0f5e8eca" class="src_link" title="spec/features/contacts_path_spec.rb">spec/features/contacts_path_spec.rb</a></td>
+        <td class="strong"><a href="#fb19e550236acb375caad6f3adeca0ac2b157708" class="src_link" title="spec/features/contacts_path_spec.rb">spec/features/contacts_path_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>22</td>
         <td>15</td>
@@ -361,17 +361,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#e080b6a33a4875fdfa1fcc4227502be00b7d33a9" class="src_link" title="spec/features/messages_path_spec.rb">spec/features/messages_path_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="strong"><a href="#c46fc0823dec0d04231dcaae32262d176b50c81a" class="src_link" title="spec/features/messages_path_spec.rb">spec/features/messages_path_spec.rb</a></td>
+        <td class="red strong">78.95 %</td>
         <td>26</td>
         <td>19</td>
-        <td>19</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>15</td>
+        <td>4</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#1d7585dae809e27035b60d8b6ba5a8aca5a4f20a" class="src_link" title="spec/models/contact_spec.rb">spec/models/contact_spec.rb</a></td>
+        <td class="strong"><a href="#436ef27ed0e8b19aa2f71a317766e81586dc381e" class="src_link" title="spec/models/contact_spec.rb">spec/models/contact_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>4</td>
@@ -381,27 +381,27 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#cfaff64ae6559406990bface0ba0ad64d1e476b6" class="src_link" title="spec/models/message_spec.rb">spec/models/message_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="strong"><a href="#dba8f681cc7124da5ce0ce9100eac110cd11e7fe" class="src_link" title="spec/models/message_spec.rb">spec/models/message_spec.rb</a></td>
+        <td class="yellow strong">83.33 %</td>
         <td>12</td>
         <td>6</td>
-        <td>6</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#7eafff111e5e1b8894831e78ca91726f11be96b8" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
+        <td class="strong"><a href="#67d775ae3237948ad22087cc505e3b3b2d741846" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>89</td>
         <td>31</td>
         <td>31</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#6f907ebdcb9f26c5bf9d01402df9b1035615bdd3" class="src_link" title="spec/support/factory_girl.rb">spec/support/factory_girl.rb</a></td>
+        <td class="strong"><a href="#d30ab43044fc8097d746d9c7e0617674935df01b" class="src_link" title="spec/support/factory_girl.rb">spec/support/factory_girl.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -426,7 +426,7 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="4f7e1a41f210a731d654e4787648d79bf2a10340">
+        <div class="source_table" id="0ed483767e2fbd4fff41fd95ae94fa110c15cb43">
   <div class="header">
     <h3>app/channels/application_cable/channel.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -468,7 +468,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="f3bc465b08f1d813c20844f12ab25c8b9fceddd1">
+        <div class="source_table" id="a9b1b3eade5af670eb970211585fe50e7dc95f2b">
   <div class="header">
     <h3>app/channels/application_cable/connection.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -510,7 +510,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="95a2d68383ebb7077b32ee87ef7055655f91c97c">
+        <div class="source_table" id="3555d99f132db43489424b50df60176e65d1a039">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -546,7 +546,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="e7228d2aba2fe0070e08fd8d3e43de23973b0971">
+        <div class="source_table" id="091ce4d42ce06834a0be27e8580733d7ac114b63">
   <div class="header">
     <h3>app/controllers/contacts_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -744,7 +744,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="5c3f843d7a5ab31966c3ec286a06639592c0e9dd">
+        <div class="source_table" id="fb130fa2349597eb59bb44a18fe36988c2076831">
   <div class="header">
     <h3>app/controllers/home_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -786,14 +786,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="b1cee622e5a363a6a95f2008430015e7c9e05e4b">
+        <div class="source_table" id="f6f06b042088aa3706355d2947de7557fac35b5c">
   <div class="header">
     <h3>app/controllers/messages_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">64.0 %</span> covered</h4>
     <div>
       <b>25</b> relevant lines. 
-      <span class="green"><b>25</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>9</b> lines missed.</span>
     </div>
   </div>
   
@@ -812,8 +812,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
           
           <code class="ruby">    @messages = Message.all</code>
         </li>
@@ -902,26 +902,26 @@
           <code class="ruby">      if to != &quot;&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="18">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
           
           <code class="ruby">        messages += 1</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="19">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
           
           <code class="ruby">        @message = Message.new(to: to, from: message_params[:from], body: message_params[:body])</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
           
           <code class="ruby">        if @message.save</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
           
           <code class="ruby">          saved_messages.push(@message)</code>
         </li>
@@ -956,14 +956,14 @@
           <code class="ruby">    if saved_messages.length == messages &amp;&amp; saved_messages.length != 0</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
           
           <code class="ruby">      flash[:notice] = &quot;All messages sent&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
           
           <code class="ruby">      redirect_to messages_path</code>
         </li>
@@ -974,8 +974,8 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="30">
+          <span class="hits">2</span>
           
           <code class="ruby">      render :new</code>
         </li>
@@ -1022,8 +1022,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
           
           <code class="ruby">    @message = Message.find(params[:id])</code>
         </li>
@@ -1058,8 +1058,8 @@
           <code class="ruby">  def message_params</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="44">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
           
           <code class="ruby">    params.require(:message).permit(:to, :from, :body)</code>
         </li>
@@ -1080,7 +1080,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="7615a39b50e92196bac321692b772e1c52714128">
+        <div class="source_table" id="4c45bfee9cbe08133e533b3aa470a0f81a9db92a">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1116,7 +1116,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="7297c42fcb04f3e685c24050c131306070857d9a">
+        <div class="source_table" id="ddfee360bbaae9f49ee9b55359824002562b2498">
   <div class="header">
     <h3>app/jobs/application_job.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1146,7 +1146,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="1c56f75acc7ab05e058b23c5a2067dbe49fcfd82">
+        <div class="source_table" id="488b9065bd8dea66faad9e67f67267987e11a8a6">
   <div class="header">
     <h3>app/mailers/application_mailer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1188,7 +1188,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="6e0eec5c311e896bf1a64b630e1505f4de822cf0">
+        <div class="source_table" id="3f2ad5a965398e1d6b16c158c44d78bc80831740">
   <div class="header">
     <h3>app/models/application_record.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1224,7 +1224,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="0952c25211bde3b8390de60c436a311aa1829cf9">
+        <div class="source_table" id="ad9d5727c0e96be5c752dcf612b1a0ef736e46d3">
   <div class="header">
     <h3>app/models/contact.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1260,14 +1260,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="222f524e6920fa47ab551b87a607f1618250a567">
+        <div class="source_table" id="3ed7b472975fcfeb41a8010b44c575e9b4dbb806">
   <div class="header">
     <h3>app/models/message.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">70.0 %</span> covered</h4>
     <div>
       <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -1316,14 +1316,14 @@
           <code class="ruby">  def send_sms</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">    begin</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="9">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
           <code class="ruby">      response = RestClient::Request.new(</code>
         </li>
@@ -1382,26 +1382,26 @@
           <code class="ruby">      ).execute</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="19">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
           <code class="ruby">    rescue RestClient::BadRequest =&gt; error</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
           
           <code class="ruby">      message = JSON.parse(error.response)[&#39;message&#39;]</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
           
           <code class="ruby">      errors.add(:base, message)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
           
           <code class="ruby">      throw(:abort)</code>
         </li>
@@ -1428,7 +1428,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="90eadf9decb04106bd3d3175fbca62ffb9ebb9a7">
+        <div class="source_table" id="db4081293c73f6e857d47e1d208621150cc9a7ec">
   <div class="header">
     <h3>config/application.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1596,7 +1596,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="b220ca266801ebbc84bfef7489b32beaf225e898">
+        <div class="source_table" id="c14cd2b2fffb4b1749f03f662ca9c8a9df4dad19">
   <div class="header">
     <h3>config/boot.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1632,7 +1632,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="f95cd03ffff73a09fd522ac5847a36eea52955b4">
+        <div class="source_table" id="51bb761695fa25e0fef7d446bd18a2b46260aa5d">
   <div class="header">
     <h3>config/environment.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1680,7 +1680,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="ddb1580867cc6ccc84c9c95d382dc5c8959adaba">
+        <div class="source_table" id="22cc834dd7a4977373416708173faf1d88f8b83f">
   <div class="header">
     <h3>config/environments/test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1950,7 +1950,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="931a4598a19112e4309d909ebc6d854626256e25">
+        <div class="source_table" id="b0162a5a933f08d94cd942a773ec55045439cfd8">
   <div class="header">
     <h3>config/initializers/application_controller_renderer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2004,7 +2004,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="56acdc1017773b15267faf5ba7d5c33be86cebdd">
+        <div class="source_table" id="4f1ad8d44b39a23a053cac56cafc9474e09a4577">
   <div class="header">
     <h3>config/initializers/assets.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2088,7 +2088,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="97ebe9d8ced8182459394e7052a5d52a1d991d20">
+        <div class="source_table" id="c219cd67ee42b0f9863c71bcde28f2d3e84b4fa5">
   <div class="header">
     <h3>config/initializers/backtrace_silencers.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2148,7 +2148,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="adad7d80072c8017b43d7172b773d11aef5b140a">
+        <div class="source_table" id="fdb46c6613c70498446cdfcfbe603483afbd280c">
   <div class="header">
     <h3>config/initializers/cookies_serializer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2196,7 +2196,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="af25dd63d1a7d37ec6dd4e3788e24c455661d50a">
+        <div class="source_table" id="2df74cad0c40b0d69db478d2726709ec106b39ff">
   <div class="header">
     <h3>config/initializers/filter_parameter_logging.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2238,7 +2238,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="2c3975e6e5c3a8e679457ef3db80eb45252c2b23">
+        <div class="source_table" id="04bf36f0bee87d70000b3811acf1a9059392bca9">
   <div class="header">
     <h3>config/initializers/inflections.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2352,7 +2352,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="c2065fabc5e35acb411b0afc8e66d81c57187c36">
+        <div class="source_table" id="22b29e6dda93d86165ad2eeb76031b3e9a5951f5">
   <div class="header">
     <h3>config/initializers/mime_types.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2394,7 +2394,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="10ede323ffdf1c77165fac448727ad308a2aacbc">
+        <div class="source_table" id="00d5fd7290c68ad580ca437ff29ae8d3ae1a3fc2">
   <div class="header">
     <h3>config/initializers/new_framework_defaults.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2556,7 +2556,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="c0a4b1044f88c0f163ee3e20381c6211859303df">
+        <div class="source_table" id="2131f0ef84e1ad91558b5914f3b4711f6aaba0ca">
   <div class="header">
     <h3>config/initializers/session_store.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2592,7 +2592,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="8d1c826924d1cd30a2c81243febea5fd1b3a4d56">
+        <div class="source_table" id="3430c10624d1ab7ceb9634335e4cfb85bb0083cf">
   <div class="header">
     <h3>config/initializers/wrap_parameters.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2694,7 +2694,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="55722f071fcb96be124e67de65278417cd36632f">
+        <div class="source_table" id="0da39059e1862a6aff57fe266239524ca97e931c">
   <div class="header">
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2742,7 +2742,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="bf2bd80f818ddae0f995ae9c07b61ab989224f13">
+        <div class="source_table" id="34e5c4396a5cf4ccceb4320fbb2015a37beb1c85">
   <div class="header">
     <h3>config/spring.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2796,7 +2796,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="8c25513f649c6f4dc0d359b3613f9dfd7093e19d">
+        <div class="source_table" id="9109f165a05305649b4ba1b46409cc799b76a426">
   <div class="header">
     <h3>spec/factories/contact.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2850,7 +2850,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="cd94e5ac139594cad8b0a02cd56d85a52135ad67">
+        <div class="source_table" id="9f9d72aa7b82a60c4a9acf50bd1e5342d3f23049">
   <div class="header">
     <h3>spec/factories/message.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2910,7 +2910,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="4b23b3a23dd8deb89c8832b44713d8ac0f5e8eca">
+        <div class="source_table" id="fb19e550236acb375caad6f3adeca0ac2b157708">
   <div class="header">
     <h3>spec/features/contacts_path_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -3060,14 +3060,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="e080b6a33a4875fdfa1fcc4227502be00b7d33a9">
+        <div class="source_table" id="c46fc0823dec0d04231dcaae32262d176b50c81a">
   <div class="header">
     <h3>spec/features/messages_path_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">78.95 %</span> covered</h4>
     <div>
       <b>19</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -3140,20 +3140,20 @@
           <code class="ruby">    click_on &quot;Send&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
           
           <code class="ruby">    expect(page).to have_content(&quot;Jenny, I got your number&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
           
           <code class="ruby">    click_on &quot;Jenny, I got your number&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
           
           <code class="ruby">    expect(page).to have_content(&#39;Message&#39;)</code>
         </li>
@@ -3212,8 +3212,8 @@
           <code class="ruby">    click_on &quot;Send&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
           
           <code class="ruby">    expect(page).to have_content(&#39;Something went wrong&#39;)</code>
         </li>
@@ -3234,7 +3234,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="1d7585dae809e27035b60d8b6ba5a8aca5a4f20a">
+        <div class="source_table" id="436ef27ed0e8b19aa2f71a317766e81586dc381e">
   <div class="header">
     <h3>spec/models/contact_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -3288,14 +3288,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="cfaff64ae6559406990bface0ba0ad64d1e476b6">
+        <div class="source_table" id="dba8f681cc7124da5ce0ce9100eac110cd11e7fe">
   <div class="header">
     <h3>spec/models/message_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="yellow">83.33 %</span> covered</h4>
     <div>
       <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -3356,8 +3356,8 @@
           <code class="ruby">    message.save</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
           
           <code class="ruby">    expect(message.errors.messages[:base]).to eq([&quot;The &#39;To&#39; number 1111111 is not a valid phone number.&quot;])</code>
         </li>
@@ -3378,7 +3378,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="7eafff111e5e1b8894831e78ca91726f11be96b8">
+        <div class="source_table" id="67d775ae3237948ad22087cc505e3b3b2d741846">
   <div class="header">
     <h3>spec/rails_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -3896,26 +3896,26 @@
           <code class="ruby">  c.configure_rspec_metadata!</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="85">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="2" data-linenumber="85">
+          <span class="hits">2</span>
           
           <code class="ruby">  c.filter_sensitive_data(&#39;&lt;twilio account sid&gt;&#39;) { ENV[&#39;TWILIO_ACCOUNT_SID&#39;] }</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="86">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="2" data-linenumber="86">
+          <span class="hits">2</span>
           
           <code class="ruby">  c.filter_sensitive_data(&#39;&lt;twilio auth token&gt;&#39;) { ENV[&#39;TWILIO_AUTH_TOKEN&#39;] }</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="87">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="2" data-linenumber="87">
+          <span class="hits">2</span>
           
           <code class="ruby">  c.filter_sensitive_data(&#39;&lt;sample sender phone number&gt;&#39;) { ENV[&#39;SAMPLE_SENDER_PHONE_NUMBER&#39;]}</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="88">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="2" data-linenumber="88">
+          <span class="hits">2</span>
           
           <code class="ruby">  c.filter_sensitive_data(&#39;&lt;sample receiver phone number&gt;&#39;) { ENV[&#39;SAMPLE_RECEIVER_PHONE_NUMBER&#39;]}</code>
         </li>
@@ -3930,7 +3930,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="6f907ebdcb9f26c5bf9d01402df9b1035615bdd3">
+        <div class="source_table" id="d30ab43044fc8097d746d9c7e0617674935df01b">
   <div class="header">
     <h3>spec/support/factory_girl.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
