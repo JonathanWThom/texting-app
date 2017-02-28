@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rest-client'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'twilio-ruby'
+gem 'zip-codes'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
