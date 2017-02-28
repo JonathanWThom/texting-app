@@ -41,6 +41,7 @@ class MessagesController < ApplicationController
 
   def reply
     message_body = params["Body"]
+    binding.pry
     from_number = params["From"]
     boot_twilio
     sms = @client.messages.create(
