@@ -15,10 +15,19 @@ This is a Ruby on Rails app in process.
 
 _I made this app on the day that S3 went down, so currently Heroku is MIA_
 
+### Installation
+1. Clone
+2. ```rake db:setup```
+3. Insert TWILIO_AUTH_TOKEN, TWILIO_ACCOUNT_SID, SAMPLE_RECEIVER_PHONE_NUMBER, SAMPLE_SENDER_PHONE_NUMBER into .env file
+4. Insert twilio_sid, twilio_token, and twilio_number in config/secrets.yml (could probably refactor this or the .env file out)
+5. ```./ngrok 3000```
+7. You may need to change the inbound route at this point. See [this article](https://www.twilio.com/blog/2013/10/test-your-webhooks-locally-with-ngrok.html)
+6. ```rails s```
+
 ### Tech
 
 * Ruby on Rails
 * Twilio API
 * Open Weather API
 * Many cool gems
-* Testing: Rspec, Capybara, PhantomJS, Simplecov, VCR. 
+* Testing: Rspec, Capybara, PhantomJS, Simplecov, VCR.
