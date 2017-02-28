@@ -46,7 +46,7 @@ class MessagesController < ApplicationController
     sms = @client.messages.create(
       from: Rails.application.secrets.twilio_number,
       to: from_number,
-      body: "Hey, thanks for the text. You number is #{from_number}. In case you didn't know."
+      body: "Oh hey there. Did you know, your number is #{from_number}? Have a happy, flappy day!"
     )
   end
 
