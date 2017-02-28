@@ -84,4 +84,6 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
   c.filter_sensitive_data('<twilio account sid>') { ENV['TWILIO_ACCOUNT_SID'] }
   c.filter_sensitive_data('<twilio auth token>') { ENV['TWILIO_AUTH_TOKEN'] }
+  c.filter_sensitive_data('<sample sender phone number>') { ENV['SAMPLE_SENDER_PHONE_NUMBER']}
+  c.filter_sensitive_data('<sample receiver phone number>') { ENV['SAMPLE_RECEIVER_PHONE_NUMBER']}
 end

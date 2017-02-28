@@ -5,7 +5,8 @@ http_interactions:
     uri: https://api.twilio.com/2010-04-01/Accounts/<twilio account sid>/Messages.json
     body:
       encoding: US-ASCII
-      string: Body=hi&To=1111111&From=3609287341
+      string: Body=Jenny%2C+I+got+your+number&To=<sample receiver phone number>&From=<sample
+        sender phone number>
     headers:
       Accept:
       - "*/*"
@@ -14,7 +15,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.1 (darwin16.1.0 x86_64) ruby/2.2.2p95
       Content-Length:
-      - '34'
+      - '61'
       Content-Type:
       - application/x-www-form-urlencoded
       Host:
@@ -23,8 +24,8 @@ http_interactions:
       - Basic QUM5YTg3MGNiZDI2Yzk3OTFjMjMyMjkzMzg3ZGQ0MDc3NzoxZmJjOWEwZDQyMTRjNzUzZDM2MTYyYWFkZjliOTM1OA==
   response:
     status:
-      code: 400
-      message: BAD REQUEST
+      code: 201
+      message: CREATED
     headers:
       Access-Control-Allow-Credentials:
       - 'true'
@@ -40,24 +41,33 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 27 Feb 2017 21:29:09 GMT
+      - Mon, 27 Feb 2017 23:59:17 GMT
+      Strict-Transport-Security:
+      - max-age=15768000
       Twilio-Request-Duration:
-      - '0.076'
+      - '0.267'
       Twilio-Request-Id:
-      - RQ048f7b1235c64648820616e7ff652f47
+      - RQ83a724660bb747a3b87e8d48574fff85
       X-Powered-By:
       - AT-5000
       X-Shenanigans:
       - none
       Content-Length:
-      - '154'
+      - '826'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"code": 21211, "message": "The ''To'' number 1111111 is not a valid
-        phone number.", "more_info": "https://www.twilio.com/docs/errors/21211", "status":
-        400}'
+      string: '{"sid": "SM2dcca81f7885426e8e4b6ed2cb49e946", "date_created": "Mon,
+        27 Feb 2017 23:59:17 +0000", "date_updated": "Mon, 27 Feb 2017 23:59:17 +0000",
+        "date_sent": null, "account_sid": "<twilio account sid>", "to": "+1<sample
+        receiver phone number>", "from": "+1<sample sender phone number>", "messaging_service_sid":
+        null, "body": "Sent from your Twilio trial account - Jenny, I got your number",
+        "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api",
+        "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code":
+        null, "error_message": null, "uri": "/2010-04-01/Accounts/<twilio account
+        sid>/Messages/SM2dcca81f7885426e8e4b6ed2cb49e946.json", "subresource_uris":
+        {"media": "/2010-04-01/Accounts/<twilio account sid>/Messages/SM2dcca81f7885426e8e4b6ed2cb49e946/Media.json"}}'
     http_version: 
-  recorded_at: Mon, 27 Feb 2017 21:29:09 GMT
+  recorded_at: Mon, 27 Feb 2017 23:59:17 GMT
 recorded_with: VCR 3.0.3

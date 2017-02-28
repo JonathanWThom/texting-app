@@ -18,19 +18,20 @@ class MessagesController < ApplicationController
         messages += 1
         @message = Message.new(to: to, from: message_params[:from], body: message_params[:body])
         if @message.save
-          ## does not handle exceptions
           saved_messages.push(@message)
         end
       end
     end
 
-
-    if saved_messages.length == messages
+    if saved_messages.length == messages && saved_messages.length != 0
       flash[:notice] = "All messages sent"
       redirect_to messages_path
     else
       render :new
     end
+
+
+    #cannot handle a totally empty form
   end
 
   def show
