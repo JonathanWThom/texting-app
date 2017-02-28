@@ -15,4 +15,13 @@ class ReceivedMessage
       false
     end
   end
+
+  def get_zip
+    @body.split.each do |word|
+      if ZipCodes.identify(word)
+        @zip = word
+      end
+    end
+    @zip
+  end
 end

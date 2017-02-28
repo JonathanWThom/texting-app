@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  skip_before_filter :verify_authenticity_token
+  skip_before_action :verify_authenticity_token
   def index
     @messages = Message.all
   end
@@ -40,14 +40,28 @@ class MessagesController < ApplicationController
   end
 
   def reply
-    message_body = params["Body"]
+    weather = Weather.new(97232)
+    message = ReceivedMessage.new(params["Body"])
+    zip = message.get_zip
     from_number = params["From"]
-    boot_twilio
-    sms = @client.messages.create(
+    if message.weather_check == true
+      weather = Weather.new(zip)
+      forecast = weather.get_weather
+      boot_twilio
+      sms = @client.messages.create(
       from: Rails.application.secrets.twilio_number,
       to: from_number,
-      body: "Oh hey there. Did you know, your number is #{from_number}? Have a happy, flappy day!"
-    )
+      body: forecast
+      )
+    else
+      boot_twilio
+      sms = @client.messages.create(
+      from: Rails.application.secrets.twilio_number,
+      to: from_number,
+      body: "Enter a valid zip code and the word 'weather' to see get a forecast."
+      )
+    end
+
   end
 
 private
