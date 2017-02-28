@@ -1,0 +1,15 @@
+<h1>Register to Receive Texts</h1>
+
+<div id="send-pin">
+  <%= form_for @user do |f| %>
+    <div class="form-group">
+      <%= f.label "Name" %>
+      <%= f.text_field :friendly_name %>
+    </div>
+    <div class="form-group">
+      <%= f.label "Phone number" %>
+      <%= f.text_field :number %>
+    </div>
+    <%= f.submit "Send PIN", class: "btn btn-primary", id: 'send-pin-link' %>
+  <% end %>
+</div>

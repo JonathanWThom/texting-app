@@ -40,12 +40,21 @@ class MessagesController < ApplicationController
   end
 
   def reply
-    weather = Weather.new(97232)
     message = ReceivedMessage.new(params["Body"])
     zip = message.get_zip
+    city = message.get_city
     from_number = params["From"]
-    if message.weather_check == true
-      weather = Weather.new(zip)
+    if message.weather_check == true && message.long_forecast == true
+      weather = Weather.new(zip, city)
+      forecast = weather.get_long_weather
+      boot_twilio
+      sms = @client.messages.create(
+      from: Rails.application.secrets.twilio_number,
+      to: from_number,
+      body: forecast
+      )
+    elsif message.weather_check == true
+      weather = Weather.new(zip, city)
       forecast = weather.get_weather
       boot_twilio
       sms = @client.messages.create(
@@ -58,7 +67,7 @@ class MessagesController < ApplicationController
       sms = @client.messages.create(
       from: Rails.application.secrets.twilio_number,
       to: from_number,
-      body: "Enter a valid zip code and the word 'weather' to see get a forecast."
+      body: "Enter a valid zip code and the word 'weather' to see get a forecast. Add the word 'long' to get an extended forecast."
       )
     end
 
