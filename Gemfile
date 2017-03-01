@@ -40,6 +40,7 @@ gem 'twilio-ruby'
 gem 'zip-codes'
 
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -55,6 +56,7 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem "factory_girl_rails", "~> 4.0"
   gem "database_cleaner"
+  gem 'twilio-test-toolkit'
 end
 
 group :development do

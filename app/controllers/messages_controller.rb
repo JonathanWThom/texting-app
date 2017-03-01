@@ -41,6 +41,7 @@ class MessagesController < ApplicationController
 
   def reply
     message = ReceivedMessage.new(params["Body"])
+    binding.pry
     zip = message.get_zip
     city = message.get_city
     from_number = params["From"]

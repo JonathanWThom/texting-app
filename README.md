@@ -11,7 +11,7 @@ This is a Ruby on Rails app in process.
 ### Future Features
 1. Perhaps adding a paid tier to Twilio, so I can validate other numbers through the app.
 2. Deploy to Heroku and use that enpoint, rather than ngrok locally, to receive text messages.
-3. Deploy to Heroku and use the Heroku scheduler to send weather updates every day.
+3. Deploy to Heroku and use the Heroku scheduler OR ActionJob/sidekiq to send weather updates every day.
 
 _I made this app on the day that S3 went down, so currently Heroku is MIA_
 

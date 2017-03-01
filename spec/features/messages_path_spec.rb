@@ -23,4 +23,13 @@ describe 'the message path', :vcr => true do
     click_on "Send"
     expect(page).to have_content('Something went wrong')
   end
+
+  it 'will reply to a message' do
+    @call = ttt_call(reply_messages_path, ENV['SAMPLE_SENDER_PHONE_NUMBER'], ENV['SAMPLE_RECEIVER_PHONE_NUMBER'], {
+      :body => 'Weather 97232'
+      })
+    @call.has_say? "Weather 97232"
+
+    ## this fails
+  end
 end

@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twilio.com/2010-04-01/Accounts/<twilio account sid>/SMS/Messages.json
+    body:
+      encoding: US-ASCII
+      string: From=<sample sender phone number>&To=<sample receiver phone number>&Body=Hey+Hey
+    headers:
+      Accept:
+      - application/json
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - twilio-ruby/4.13.0 (ruby/x86_64-darwin15 2.3.1-p112)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Authorization:
+      - Basic QUM5YTg3MGNiZDI2Yzk3OTFjMjMyMjkzMzg3ZGQ0MDc3NzoxZmJjOWEwZDQyMTRjNzUzZDM2MTYyYWFkZjliOTM1OA==
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match,
+        If-Unmodified-Since
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 01 Mar 2017 00:19:14 GMT
+      Etag:
+      - 1688d4ffea05dad8a43f85b7c96b8ea9
+      I-Twilio-Customer-User-Agent:
+      - None
+      Last-Modified:
+      - Wed, 01 Mar 2017 00:19:14 +0000
+      Strict-Transport-Security:
+      - max-age=15768000
+      Twilio-Request-Duration:
+      - '0.288'
+      Twilio-Request-Id:
+      - RQ34bd4c21106f4d6fbec4a3d45bd3c111
+      X-Powered-By:
+      - AT-5000
+      X-Shenanigans:
+      - none
+      Content-Length:
+      - '576'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sid": "SM1b8d0660ddf0460da1aa9c02193bc82b", "date_created": "Wed,
+        01 Mar 2017 00:19:14 +0000", "date_updated": "Wed, 01 Mar 2017 00:19:14 +0000",
+        "date_sent": null, "account_sid": "<twilio account sid>", "to": "+1<sample
+        receiver phone number>", "from": "+1<sample sender phone number>", "body":
+        "Sent from your Twilio trial account - Hey Hey", "status": "queued", "direction":
+        "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit":
+        "USD", "uri": "/2010-04-01/Accounts/<twilio account sid>/SMS/Messages/SM1b8d0660ddf0460da1aa9c02193bc82b.json",
+        "num_segments": "1"}'
+    http_version: 
+  recorded_at: Wed, 01 Mar 2017 00:19:14 GMT
+recorded_with: VCR 3.0.3

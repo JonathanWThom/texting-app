@@ -23,6 +23,7 @@ class ReceivedMessage
   end
 
   def get_zip
+    binding.pry
     @body.split.each do |word|
       if ZipCodes.identify(word)
         @zip = word
@@ -32,6 +33,7 @@ class ReceivedMessage
   end
 
   def get_city
+    binding.pry
     @body.split.each do |word|
       if ZipCodes.identify(word)
         @city = ZipCodes.identify(word)[:city]
